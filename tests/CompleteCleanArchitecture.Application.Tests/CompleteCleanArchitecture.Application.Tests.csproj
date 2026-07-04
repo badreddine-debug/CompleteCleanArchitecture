@@ -24,6 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\CompleteCleanArchitecture.Application\CompleteCleanArchitecture.Application.csproj" />
     <ProjectReference Include="..\..\src\CompleteCleanArchitecture.Domain\CompleteCleanArchitecture.Domain.csproj" />
+    <ProjectReference Include="..\..\src\CompleteCleanArchitecture.Infrastructure\CompleteCleanArchitecture.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,7 @@
 ﻿using CompleteCleanArchitecture.Application.Common.Interfaces;
 using CompleteCleanArchitecture.Infrastructure.Persistence;
 using CompleteCleanArchitecture.Infrastructure.Repositories;
+using CompleteCleanArchitecture.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +19,7 @@ public static class DependencyInjection
         services.AddScoped<ITodoItemRepository, EfTodoItemRepository>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<IDatabaseInitializer, DatabaseInitializer>();
+        services.AddScoped<ICalculationService, CalculationService>();
 
         return services;
     }
